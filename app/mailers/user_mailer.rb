@@ -1,4 +1,5 @@
 class UserMailer < ApplicationMailer
+  default parts_order: ["text/html", "text/enriched", "text/plain"] ### text/plain 優先
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
