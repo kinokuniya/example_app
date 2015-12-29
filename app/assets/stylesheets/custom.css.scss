@@ -1,5 +1,33 @@
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+
+
+
+// Example using 'Cerulean' bootswatch
+
+// Import bootstrap-sprockets
 @import "bootstrap-sprockets";
+
+// Import cerulean variables
+@import "bootswatch/paper/variables";
+
+// Then bootstrap itself
 @import "bootstrap";
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 60px; }
+
+// And finally bootswatch style itself
+@import "bootswatch/paper/bootswatch";
+
+// Whatever application styles you have go last
+// @import "base";
+
+
+
+.alert { margin: 10px 0px; } ///
+
+
 
 /* mixins, variables, etc. */
 
@@ -62,20 +90,22 @@ p {
 
 /* header */
 
+/*
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: black;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 }
+*/
 
 /* footer */
 
